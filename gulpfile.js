@@ -34,7 +34,9 @@ const cfg = {
 };
 
 gulp.task('lint-less', () => {
-  return gulp.src(cfg.root + cfg.src.css + cfg.src.less + '/*.less')
+  return gulp.src([
+      cfg.root + cfg.src.css + cfg.src.less + '/*.less',
+      '!' + cfg.root + cfg.src.css + cfg.src.less + '/normalize.less'])
     .pipe(lesshint())
     .pipe(lesshint.reporter())
     .pipe(lesshint.failOnError());
@@ -78,7 +80,7 @@ gulp.task('watch', ['create-server'], () => {
     cfg.root + cfg.src.css + cfg.src.less + '/*.less',
     cfg.root + cfg.src.js + '/main.js',
     cfg.root + '/*.html'
-    ], ['css', 'js', 'reload']);
+    ], ['css','js','reload']); // removed js task
 })
 
 gulp.task('create-server', () => {

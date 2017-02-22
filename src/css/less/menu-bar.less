@@ -1,0 +1,104 @@
+nav {
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    div {
+
+        height: 34px;
+        margin: 25px;
+        line-height: 34px;
+        letter-spacing: 1.38px;
+        font-weight: 300;
+        font-size: 18px;
+        color: rgba(172, 176, 180, 100);
+
+        button {
+
+            width: 34px;
+            height: 100%;
+            float: right;
+            padding: 0px;
+            background-color: #002a34;
+            border-radius: 30px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+            div {
+
+                height: 34px;
+                width: 34px;
+                margin: 0px;
+                background: url('/imgs/menu-open.png') no-repeat center;
+                transition: background 0.2s ease;
+
+                &:hover {
+
+                    background: url('/imgs/menu-close.png') no-repeat center;
+                }
+            }
+
+            // for js animation
+            .open {
+
+                background: url('/imgs/menu-close.png') no-repeat center;
+            }
+        }
+    }
+
+    ul {
+        
+        z-index: -1;
+        position: absolute;
+        right: -176px;
+        top: 0px;
+        margin: 0px;
+        padding: 109px 25px 0px 0px;
+        width: 150px;
+        height: 100%;
+        text-align: right;
+        list-style-type: none;
+        border-left: 1px solid #cfd7d9;
+        transition: right 0.4s ease-in-out;
+
+        a {
+
+            letter-spacing: 1px;
+            color: #777d7e;
+            transition: color 0.3s ease;
+
+            &:hover {
+
+                color: @base-font-color;
+            }
+        }
+
+        li {
+
+            margin-bottom: 25px;
+        }
+
+        .cv-download {
+
+            float: right;
+            width: 72px;
+            padding-top: 21px;
+            line-height: 19px;
+            border-top: 1px #8ac0ff solid;
+        }
+
+        img {
+
+            top: 4px;
+            position: relative;
+            margin-left: 6px;
+        }
+    }
+
+    .slide-in {
+
+        right: 0px;
+    }
+}
