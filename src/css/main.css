@@ -344,7 +344,7 @@ nav ul {
   text-align: right;
   list-style-type: none;
   border-left: 1px solid #cfd7d9;
-  transition: right 0.5s ease-in-out;
+  transition: right 0.4s ease-in-out;
 }
 
 nav ul a {
