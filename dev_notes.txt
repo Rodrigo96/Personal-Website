@@ -1,7 +1,9 @@
 rodrigo alves text on top left corner to be faded in
 
-animate menu with js
-
 set links in menu
 
+stop menu from activating click event while moving
+
 add cv to cv menu button
+
+remember to add link to "view on github" in header main text.

@@ -288,6 +288,16 @@ a {
   text-decoration: none;
 }
 
+.body-wraper {
+  width: 700px;
+  margin: auto;
+  padding-top: 115px;
+}
+
+.body-wraper a {
+  color: #2a7ddd;
+}
+
 nav {
   position: fixed;
   width: 100%;
@@ -353,6 +363,7 @@ nav .menu {
   text-align: right;
   list-style-type: none;
   border-left: 1px solid #cfd7d9;
+  background: #fff;
   transition: right 0.3s ease;
 }
 
@@ -396,4 +407,42 @@ nav .menu .cv-download img {
 
 nav .menu-open {
   right: 0px;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  color: #002a34;
+}
+
+header img {
+  margin: 0 auto 30px auto;
+  height: 180px;
+  width: 180px;
+}
+
+header h1 {
+  width: 200px;
+  margin: 0px auto 8px auto;
+  padding-bottom: 8px;
+  font-size: 26px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  border-bottom: 1px solid #8ac0ff;
+}
+
+header h2 {
+  margin: 0px auto;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+
+header p {
+  margin: 50px 0px 60px 0px;
+  text-align: left;
+  letter-spacing: 0.2px;
+  line-height: 28px;
+  color: #243438;
 }
