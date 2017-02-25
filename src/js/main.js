@@ -3,23 +3,42 @@
   
   var page = {
     init: function () {
-      var menuBtn = document.getElementById('menu-btn'),
-          menu = document.getElementById('menu'),
-          menuNav = document.getElementById('menu-nav');
 
-      menuBtn.addEventListener('mouseenter', function () {
-        console.log('enter');
-        menuBtn.classList.add('open');
-        menu.classList.add('slide-in');
+      var menuWraper = document.getElementById('menu-wraper'),
+          menuBtn = document.getElementById('menu-btn'),
+          menu = menuWraper.querySelector('.menu'),
+          isInMenu = false; // true if mouse is over .menu
+
+      function openMenu() {
+        menuBtn.classList.add('menu-btn-open');
+        menu.classList.add('menu-open');
+      }
+
+      function closeMenu() {
+        menuBtn.classList.remove('menu-btn-open');
+        menu.classList.remove('menu-open');
+      }
+      
+      menuBtn.addEventListener('click', function () {
+        if (menu.classList.contains('menu-open'))
+          closeMenu();
+        else
+          openMenu();
       }, false);
 
-      menuNav.addEventListener('mouseleave', function () {
-        console.log('leave');
+      menuBtn.addEventListener('mouseenter', openMenu, false);
+
+      menuWraper.addEventListener('mouseenter', function () {
+        isInMenu = true;
+      }, false);
+
+      menuWraper.addEventListener('mouseleave', function () {
+        isInMenu = false;
         setTimeout(function () {
-          menuBtn.classList.remove('open');
-          menu.classList.remove('slide-in');
+          if (!isInMenu) closeMenu();
         }, 500);
       }, false);
+
     }
   };
 

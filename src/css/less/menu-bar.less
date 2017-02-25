@@ -2,7 +2,17 @@ nav {
 
     position: fixed;
     width: 100%;
-    height: 100%;
+
+    .name {
+
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .fade-in {
+
+        opacity: 1;
+    }
 
     div {
 
@@ -14,70 +24,81 @@ nav {
         font-size: 18px;
         color: rgba(172, 176, 180, 100);
 
-        button {
+        .wraper {
 
+            float: right;
             width: 34px;
             height: 100%;
-            float: right;
-            padding: 0px;
-            background-color: #002a34;
-            border-radius: 30px;
-            border: 0;
-            outline: none;
-            cursor: pointer;
+            padding-left: 117px;
 
-            div {
+            button {
 
-                height: 34px;
-                width: 34px;
-                margin: 0px;
-                background: url('/imgs/menu-open.png') no-repeat center;
-                transition: background 0.2s ease;
+                width: 100%;
+                height: 100%;
+                padding: 0px;
+                background-color: #002a34;
+                border-radius: 30px;
+                border: 0;
+                outline: none;
+                cursor: pointer;
 
-                &:hover {
+                div {
+
+                    width: 100%;
+                    height: 100%;
+                    margin: 0px;
+                    background: url('/imgs/menu-open.png') no-repeat center;
+                    transition: background 0.3s ease;
+                }
+
+                .menu-btn-open {
 
                     background: url('/imgs/menu-close.png') no-repeat center;
                 }
             }
-
-            // for js animation
-            .open {
-
-                background: url('/imgs/menu-close.png') no-repeat center;
-            }
         }
     }
 
-    ul {
-        
-        z-index: -1;
+    .menu {
+
         position: absolute;
         right: -176px;
         top: 0px;
+        z-index: -1;
         margin: 0px;
-        padding: 109px 25px 0px 0px;
-        width: 150px;
-        height: 100%;
+        width: 175px;
+        height: 100vh;
         text-align: right;
         list-style-type: none;
         border-left: 1px solid #cfd7d9;
-        transition: right 0.4s ease-in-out;
+        transition: right 0.3s ease;
+
+        ul {
+
+            width: 100%;
+            margin-top: 109px;
+            padding: 0px;
+            list-style-type: none;
+        }
+
+        li {
+
+            margin: 0px 25px 25px 0px;
+            line-height: 24px;
+            letter-spacing: 1px;
+        }
 
         a {
 
-            letter-spacing: 1px;
             color: #777d7e;
+            letter-spacing: 1px;
+            font-weight: 400;
             transition: color 0.3s ease;
 
             &:hover {
 
                 color: @base-font-color;
             }
-        }
-
-        li {
-
-            margin-bottom: 25px;
         }
 
         .cv-download {
@@ -87,17 +108,17 @@ nav {
             padding-top: 21px;
             line-height: 19px;
             border-top: 1px #8ac0ff solid;
-        }
 
-        img {
+            img {
 
-            top: 4px;
-            position: relative;
-            margin-left: 6px;
+                position: relative;
+                top: 4px;
+                margin-left: 6px;
+            }
         }
     }
 
-    .slide-in {
+    .menu-open {
 
         right: 0px;
     }
