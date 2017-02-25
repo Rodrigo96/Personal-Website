@@ -282,6 +282,7 @@ sup {
 body {
   font: 20px 'Lato', sans-serif;
   color: #243438;
+  margin-bottom: 100px;
 }
 
 a {
@@ -296,6 +297,10 @@ a {
 
 .body-wraper a {
   color: #2a7ddd;
+}
+
+.body-wraper a:hover {
+  text-decoration: underline;
 }
 
 nav {
@@ -363,7 +368,7 @@ nav .menu {
   text-align: right;
   list-style-type: none;
   border-left: 1px solid #cfd7d9;
-  background: #fff;
+  background: #ffffff;
   transition: right 0.3s ease;
 }
 
@@ -440,9 +445,33 @@ header h2 {
 }
 
 header p {
-  margin: 50px 0px 60px 0px;
+  margin-top: 50px;
+  margin-bottom: 60px;
   text-align: left;
   letter-spacing: 0.2px;
   line-height: 28px;
+  font-size: 20px;
   color: #243438;
+}
+
+header .repo {
+  font-size: 16px;
+  text-align: center;
+}
+
+section {
+  margin-top: 60px;
+  border-top: 1px solid #cfd7d9;
+}
+
+section h3 {
+  margin: 5px 0px 50px 0px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+section p {
+  margin: 0px;
+  letter-spacing: 0.2px;
+  line-height: 28px;
 }

@@ -7,7 +7,8 @@
       var menuWraper = document.getElementById('menu-wraper'),
           menuBtn = document.getElementById('menu-btn'),
           menu = menuWraper.querySelector('.menu'),
-          isInMenu = false; // true if mouse is over .menu
+          isInMenu = false, // true if mouse is over .menu
+          isAnimating = false; // true if menu is animating
 
       function openMenu() {
         menuBtn.classList.add('menu-btn-open');
