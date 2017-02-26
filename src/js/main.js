@@ -11,20 +11,30 @@
           isAnimating = false; // true if menu is animating
 
       function openMenu() {
+        isAnimating = true;
         menuBtn.classList.add('menu-btn-open');
         menu.classList.add('menu-open');
+        setTimeout(function () {
+          isAnimating = false;
+        } ,300);
       }
 
       function closeMenu() {
+        isAnimating = true;
         menuBtn.classList.remove('menu-btn-open');
         menu.classList.remove('menu-open');
+        setTimeout(function () {
+          isAnimating = false;
+        } ,300);
       }
       
       menuBtn.addEventListener('click', function () {
-        if (menu.classList.contains('menu-open'))
-          closeMenu();
-        else
-          openMenu();
+        if (!isAnimating) {
+          if (menu.classList.contains('menu-open'))
+            closeMenu();
+          else
+            openMenu();
+        }
       }, false);
 
       menuBtn.addEventListener('mouseenter', openMenu, false);
