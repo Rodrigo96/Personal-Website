@@ -13,3 +13,5 @@ add a mediequery to givethe navbar a white background and a white drop shadow wh
 take care of links at the end of every section
 
 remember to animate the button in the menu to scrool to section
+
+make scketch file downloadable

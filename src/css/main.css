@@ -297,15 +297,18 @@ a {
 
 .body-wraper a {
   color: #2a7ddd;
+  border-bottom: 2px solid rgba(138, 192, 255, 0);
+  transition: border-bottom 0.3s ease;
 }
 
 .body-wraper a:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid #8ac0ff;
 }
 
 nav {
   position: fixed;
   width: 100%;
+  pointer-events: none;
 }
 
 nav .name {
@@ -331,7 +334,7 @@ nav div .wraper {
   float: right;
   width: 34px;
   height: 100%;
-  padding-left: 117px;
+  pointer-events: initial;
 }
 
 nav div .wraper button {
@@ -474,4 +477,48 @@ section p {
   margin: 0px;
   letter-spacing: 0.2px;
   line-height: 28px;
+}
+
+.imgs-wraper {
+  height: 69px;
+  margin: 50px auto 25px auto;
+  text-align: center;
+  color: #878d8f;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.16px;
+}
+
+.imgs-wraper .img-cell {
+  display: inline-block;
+  height: 100%;
+  width: 79px;
+  margin: 0px 17px;
+}
+
+.imgs-wraper .img-cell img {
+  height: 30px;
+}
+
+.imgs-wraper .img-cell span {
+  height: 5px;
+  display: block;
+  margin: 10px 0px 5px 0px;
+  background: #dae4e7;
+}
+
+.imgs-wraper .img-cell span .inner-bar {
+  background: #8ac0ff;
+}
+
+.imgs-wraper .html {
+  width: 95%;
+}
+
+.imgs-wraper .css {
+  width: 95%;
+}
+
+.imgs-wraper .js {
+  width: 95%;
 }
