@@ -309,6 +309,7 @@ nav {
   position: fixed;
   width: 100%;
   pointer-events: none;
+  z-index: 5;
 }
 
 nav .name {
@@ -573,6 +574,7 @@ section p {
   position: relative;
   height: 100%;
   width: 337px;
+  background: pink;
 }
 
 .project-container .project-cell img,.project-container .project-cell div {
@@ -580,6 +582,10 @@ section p {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.project-container .project-cell img {
+  margin-top: 4px;
 }
 
 .project-container .project-cell h4 {
@@ -596,7 +602,7 @@ section p {
 }
 
 .project-container .project-cell li {
-  float: left;
+  display: inline-block;
   margin-left: 17px;
 }
 
