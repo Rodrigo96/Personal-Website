@@ -520,5 +520,45 @@ section p {
 }
 
 .imgs-wraper .js {
+  width: 90%;
+}
+
+.imgs-wraper .less {
+  width: 90%;
+}
+
+.imgs-wraper .sass {
+  width: 70%;
+}
+
+.imgs-wraper .jquery {
+  width: 85%;
+}
+
+.imgs-wraper .git {
+  width: 97%;
+}
+
+.imgs-wraper .gulp {
+  width: 90%;
+}
+
+.imgs-wraper .grunt {
+  width: 70%;
+}
+
+.imgs-wraper .sketch {
   width: 95%;
+}
+
+.imgs-wraper .ai {
+  width: 95%;
+}
+
+.imgs-wraper .ps {
+  width: 75%;
+}
+
+.imgs-wraper .fw {
+  width: 55%;
 }
