@@ -576,7 +576,7 @@ section p {
   width: 337px;
 }
 
-.project-container .project-cell img,.project-container .project-cell div {
+.project-container .project-cell img,.project-container .project-cell .center {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -627,16 +627,16 @@ section p {
 .project-container .project-cell .normal-btn {
   padding-right: 10px;
   color: #243438;
-  border: none;
+  border: 0;
   transition: color 0.2s ease;
 }
 
 .project-container .project-cell .normal-btn .arrow-right {
-  background-image: url(/imgs/arrow-right.png);
+  background-image: url('/imgs/arrow-right.png');
 }
 
 .project-container .project-cell .normal-btn .arrow-down {
-  background-image: url(/imgs/arrow-down.png);
+  background-image: url('/imgs/arrow-down.png');
 }
 
 .project-container .project-cell .normal-btn span {
@@ -663,12 +663,23 @@ section p {
 }
 
 .project-container .project-cell .dropdown-btn {
+  display: inline-block;
+  height: 24px;
   padding-bottom: 5px;
   border-bottom: 1px solid #d8d8d8;
+  text-align: center;
 }
 
 .project-container .project-cell .dropdown-btn:hover > span {
   left: 10px;
+}
+
+.project-container .project-cell .dropdown-btn a {
+  display: block;
+}
+
+.project-container .project-cell .dropdown-btn span {
+  float: right;
 }
 
 .project-container .right {
