@@ -596,12 +596,13 @@ section p {
   white-space: nowrap;
   font-size: 20px;
   font-weight: normal;
+  line-height: 28px;
   letter-spacing: 0.2px;
 }
 
 .project-container .project-cell ul {
   padding: 0px;
-  margin: 20px 0px 20px -12px;
+  margin: 20px 0px 10px -12px;
   width: 280px;
   color: #767f82;
   list-style: none;
@@ -610,6 +611,7 @@ section p {
 .project-container .project-cell li {
   display: inline-block;
   margin-left: 9px;
+  margin-bottom: 10px;
 }
 
 .project-container .project-cell li:before {

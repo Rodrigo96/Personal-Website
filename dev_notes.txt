@@ -15,3 +15,5 @@ take care of links at the end of every section
 remember to animate the button in the menu to scrool to section
 
 make scketch file downloadable
+
+add links to projects demos
