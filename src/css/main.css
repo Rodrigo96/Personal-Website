@@ -581,6 +581,10 @@ section p {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0.18px;
 }
 
 .project-container .project-cell img {
@@ -592,14 +596,13 @@ section p {
   white-space: nowrap;
   font-size: 20px;
   font-weight: normal;
+  letter-spacing: 0.2px;
 }
 
 .project-container .project-cell ul {
   padding: 0px;
-  margin: 20px 0px 20px -17px;
+  margin: 20px 0px 20px -12px;
   width: 280px;
-  font-size: 18px;
-  font-weight: 300;
   color: #767f82;
   list-style: none;
 }
@@ -614,6 +617,43 @@ section p {
   margin-right: 3px;
   font-size: 22px;
   color: #8ac0ff;
+}
+
+.project-container .project-cell a {
+  color: #243438;
+  border: none;
+  transition: color 0.2s ease;
+}
+
+.project-container .project-cell a:hover {
+  color: #161a1b;
+}
+
+.project-container .project-cell a:hover > span {
+  margin-left: 15px;
+  background-color: #2a83ea;
+}
+
+.project-container .project-cell a .arrow-right {
+  background-image: url(/imgs/arrow-right.png);
+}
+
+.project-container .project-cell a .arrow-down {
+  background-image: url(/imgs/arrow-down.png);
+}
+
+.project-container .project-cell a span {
+  position: relative;
+  top: 3px;
+  height: 19px;
+  width: 19px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: #4a90e2;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  transition: background-color 0.3s ease, margin-left 0.2s ease;
 }
 
 .project-container .right {
