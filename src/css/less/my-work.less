@@ -9,7 +9,6 @@
         position: relative;
         height: 100%;
         width: 337px;
-        background: pink;
 
         img,
         div {
@@ -36,14 +35,26 @@
         ul {
 
             padding: 0px;
-            margin: 20px 0px;
-            max-width: 240px;
+            margin: 20px 0px 20px -17px;
+            width: 280px;
+            font-size: 18px;
+            font-weight: 300;
+            color: #767f82;
+            list-style: none;
         }
 
         li {
 
             display: inline-block;
-            margin-left: 17px;
+            margin-left: 9px;
+
+            &:before {
+
+                content: '\2022';
+                margin-right: 3px;
+                font-size: 22px;
+                color: #8ac0ff;
+            }
         }
 
     }
