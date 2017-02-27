@@ -17,3 +17,5 @@ remember to animate the button in the menu to scrool to section
 make scketch file downloadable
 
 add links to projects demos
+
+fix font-smothing bug in demos btn
