@@ -7,6 +7,8 @@
       var menuWraper = document.getElementById('menu-wraper'),
           menuBtn = document.getElementById('menu-btn'),
           menu = menuWraper.querySelector('.menu'),
+          demosBtn = document.getElementById('demos-menu-btn'),
+          demosMenu = demosBtn.querySelector('#demos-menu'),
           isInMenu = false, // true if mouse is over .menu
           isAnimating = false; // true if menu is animating
 
@@ -49,6 +51,27 @@
           if (!isInMenu) closeMenu();
         }, 500);
       }, false);
+
+      function closeDemosMenu() {
+        demosMenu.classList.remove('open-dropdown-menu');
+      }
+
+      function openDemosMenu() {
+        demosMenu.classList.add('open-dropdown-menu');
+      }
+
+      function toggleDemosMenu() {
+        if (demosMenu.classList.contains('open-dropdown-menu'))
+          closeDemosMenu();
+        else
+          openDemosMenu();
+      }
+
+      demosBtn.addEventListener('click', toggleDemosMenu, false);
+
+      demosBtn.addEventListener('mouseenter', openDemosMenu, false);
+
+      demosBtn.addEventListener('mouseleave', closeDemosMenu, false);
 
     }
   };
