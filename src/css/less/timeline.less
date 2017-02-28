@@ -10,15 +10,25 @@
         position: absolute;
         left: 50%;
 		top: 3px;
-        width: 3px;
+        width: 2px;
 		height: 100%;
+        margin-left: -1px;
         background: #d6d6d6;
         
     }
 
     .entry {
 
+        position: relative;
         width: 100%;
+
+        & > div {
+
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 0px 20px 0px 20px;
+            width: 50%;
+        }
     }
 
     .left {
