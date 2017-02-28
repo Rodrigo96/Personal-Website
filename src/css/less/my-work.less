@@ -66,6 +66,31 @@
             }
         }
 
+        .arrow-right {
+
+            background-image: url('/imgs/arrow-right.png');
+        }
+
+        .arrow-down {
+
+            background-image: url('/imgs/arrow-down.png');
+        }
+
+        span {
+
+            position: relative;
+            top: 3px;
+            left: 10px;
+            height: 19px;
+            width: 19px;
+            border-radius: 10px;
+            background-color: #4a90e2;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: inline-block;
+            transition: background-color 0.3s ease, left 0.2s ease;
+        }
+
         .normal-btn {
 
             padding-right: 10px;
@@ -73,66 +98,154 @@
             border: 0;
             transition: color 0.2s ease;
 
-            .arrow-right {
+            &:hover {
 
-                background-image: url('/imgs/arrow-right.png');
+                color: #161a1b;
             }
 
-            .arrow-down {
+            &:hover > span {
 
-                background-image: url('/imgs/arrow-down.png');
-            }
-
-            span {
-
-                position: relative;
-                top: 3px;
-                left: 10px;
-                height: 19px;
-                width: 19px;
-                border-radius: 10px;
-                background-color: #4a90e2;
-                background-position: center;
-                background-repeat: no-repeat;
-                display: inline-block;
-                transition: background-color 0.3s ease, left 0.2s ease;
+                left: 15px;
+                background-color: #2a83ea;
             }
         }
 
-         .normal-btn:hover {
-
-            color: #161a1b;
-        }
-
-        .normal-btn:hover > span {
-
-            left: 15px;
-            background-color: #2a83ea;
-        }
 
         .dropdown-btn {
 
+            position: relative;
+            display: inline-block;
+            padding-right: 10px;
+            cursor: pointer;
+            transition: color 0.2s ease;
+
+            &:hover {
+
+                color: #161a1b;
+            }
+
+            &:hover > span {
+
+                background-color: #2a83ea;
+            }
+
+            &:hover > div {
+
+                left: -50%;
+                width: 200%;
+            }
+
+            div {
+
+                position: absolute;
+                top: 28px;
+                left: 0px;
+                height: 0px;
+                width: 100%;
+                overflow: hidden;
+                border-top: 1px solid #d8d8d8;
+                transition: height 0.2s ease-out, width 0.2s ease-out, left 0.2s ease-out;
+            }
+
+            .open-dropdown-menu {
+
+                left: -50%;
+                width: 200%;
+                height: 75px;
+            }
+
+            a {
+
+                position: relative;
+                display: block;
+                margin: 10px auto;
+                text-align: center;
+                color: @base-font-color;
+                border: 0;
+                transition: color 0.2s ease;
+
+                &:hover {
+
+                    color: #161a1b;
+                }
+
+                 &:hover > span {
+
+                    left: -5px;
+                    background-color: #2a83ea;
+                }
+
+                span {
+
+                    float: right;
+                    left: -10px;
+                }
+            }
+        }
+
+        // ------------------
+        /*.dropdown-btn {
+
+            position: relative;
             display: inline-block;
             height: 24px;
             padding-bottom: 5px;
-            border-bottom: 1px solid #d8d8d8;
             text-align: center;
+            cursor: pointer;
 
             &:hover > span {
 
                 left: 10px;
             }
 
-            a {
-
-                display: block;
-            }
-
             span {
 
                 float: right;
             }
-        }
+
+            div {
+
+                position: absolute;
+                top: 29px;
+                left: 0px;
+                height: 0px;
+                width: 100%;
+                padding-top: -5px;
+                overflow: hidden;
+                border-top: 1px solid #d8d8d8;
+                transition: width 0.2s ease-out, left 0.2s ease-out;
+            }
+
+            &:hover > div,
+            .open-dropdown {
+
+                width: 200%;
+                left: -50%;
+            }
+
+            .open-dropdown {
+
+                height: auto;
+            }
+
+            a {
+
+                position: relative;
+                display: block;
+                padding-right: 10px;
+                margin: 10px 0px;
+                border: 0;
+                color: @base-font-color;
+
+                &:hover > span {
+
+                    position: absolute;
+                    right: 100px;
+                }
+            }
+            
+        }*/
+        // btn ---
 
     }
 

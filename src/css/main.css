@@ -574,6 +574,67 @@ section p {
   position: relative;
   height: 100%;
   width: 337px;
+ /*.dropdown-btn {
+
+            position: relative;
+            display: inline-block;
+            height: 24px;
+            padding-bottom: 5px;
+            text-align: center;
+            cursor: pointer;
+
+            &:hover > span {
+
+                left: 10px;
+            }
+
+            span {
+
+                float: right;
+            }
+
+            div {
+
+                position: absolute;
+                top: 29px;
+                left: 0px;
+                height: 0px;
+                width: 100%;
+                padding-top: -5px;
+                overflow: hidden;
+                border-top: 1px solid #d8d8d8;
+                transition: width 0.2s ease-out, left 0.2s ease-out;
+            }
+
+            &:hover > div,
+            .open-dropdown {
+
+                width: 200%;
+                left: -50%;
+            }
+
+            .open-dropdown {
+
+                height: auto;
+            }
+
+            a {
+
+                position: relative;
+                display: block;
+                padding-right: 10px;
+                margin: 10px 0px;
+                border: 0;
+                color: @base-font-color;
+
+                &:hover > span {
+
+                    position: absolute;
+                    right: 100px;
+                }
+            }
+            
+        }*/;
 }
 
 .project-container .project-cell img,.project-container .project-cell .center {
@@ -624,22 +685,15 @@ section p {
   color: #8ac0ff;
 }
 
-.project-container .project-cell .normal-btn {
-  padding-right: 10px;
-  color: #243438;
-  border: 0;
-  transition: color 0.2s ease;
-}
-
-.project-container .project-cell .normal-btn .arrow-right {
+.project-container .project-cell .arrow-right {
   background-image: url('/imgs/arrow-right.png');
 }
 
-.project-container .project-cell .normal-btn .arrow-down {
+.project-container .project-cell .arrow-down {
   background-image: url('/imgs/arrow-down.png');
 }
 
-.project-container .project-cell .normal-btn span {
+.project-container .project-cell span {
   position: relative;
   top: 3px;
   left: 10px;
@@ -653,6 +707,13 @@ section p {
   transition: background-color 0.3s ease, left 0.2s ease;
 }
 
+.project-container .project-cell .normal-btn {
+  padding-right: 10px;
+  color: #243438;
+  border: 0;
+  transition: color 0.2s ease;
+}
+
 .project-container .project-cell .normal-btn:hover {
   color: #161a1b;
 }
@@ -663,23 +724,65 @@ section p {
 }
 
 .project-container .project-cell .dropdown-btn {
+  position: relative;
   display: inline-block;
-  height: 24px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #d8d8d8;
-  text-align: center;
+  padding-right: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.project-container .project-cell .dropdown-btn:hover {
+  color: #161a1b;
 }
 
 .project-container .project-cell .dropdown-btn:hover > span {
-  left: 10px;
+  background-color: #2a83ea;
+}
+
+.project-container .project-cell .dropdown-btn:hover > div {
+  left: -50%;
+  width: 200%;
+}
+
+.project-container .project-cell .dropdown-btn div {
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  height: 0px;
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid #d8d8d8;
+  transition: height 0.2s ease-out, width 0.2s ease-out, left 0.2s ease-out;
+}
+
+.project-container .project-cell .dropdown-btn .open-dropdown-menu {
+  left: -50%;
+  width: 200%;
+  height: 75px;
 }
 
 .project-container .project-cell .dropdown-btn a {
+  position: relative;
   display: block;
+  margin: 10px auto;
+  text-align: center;
+  color: #243438;
+  border: 0;
+  transition: color 0.2s ease;
 }
 
-.project-container .project-cell .dropdown-btn span {
+.project-container .project-cell .dropdown-btn a:hover {
+  color: #161a1b;
+}
+
+.project-container .project-cell .dropdown-btn a:hover > span {
+  left: -5px;
+  background-color: #2a83ea;
+}
+
+.project-container .project-cell .dropdown-btn a span {
   float: right;
+  left: -10px;
 }
 
 .project-container .right {
