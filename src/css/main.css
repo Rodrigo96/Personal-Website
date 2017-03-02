@@ -910,12 +910,18 @@ footer textarea {
 }
 
 footer div {
+  position: relative;
   width: 300px;
+  height: 22px;
   margin: 0px auto;
 }
 
-footer input[type='submit'] {
+footer button {
+  position: absolute;
+  right: 0px;
   cursor: pointer;
+  padding: 0px;
+  height: 22px;
   font-size: 17px;
   font-weight: 300;
   letter-spacing: 0.18px;
@@ -923,4 +929,19 @@ footer input[type='submit'] {
   background: none;
   border: 0px;
   outline: none;
+}
+
+footer button img:first-child {
+  margin: 0px 12px 2px 3px;
+}
+
+footer button img:last-child {
+  position: absolute;
+  right: 0px;
+  top: 2px;
+  transition: right 0.15s ease-in-out;
+}
+
+footer button:hover img:last-child {
+  right: -15px;
 }
