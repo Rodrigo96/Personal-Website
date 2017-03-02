@@ -282,7 +282,6 @@ sup {
 body {
   font: 20px 'Lato', sans-serif;
   color: #243438;
-  margin-bottom: 500px;
 }
 
 a {
@@ -846,4 +845,66 @@ section p {
   font-weight: 300;
   letter-spacing: 0.16px;
   text-align: center;
+}
+
+footer {
+  padding: 60px 0px;
+  margin-top: 60px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  border-top: 1px solid #cfd7d9;
+}
+
+footer span {
+  display: block;
+  margin: 30px 0px;
+  text-align: center;
+}
+
+footer span:first-child,footer span:last-child {
+  margin: 0px;
+}
+
+footer a {
+  color: #3e89e0;
+  transition: 0.3s color ease;
+}
+
+footer a:hover {
+  color: #8ac0ff;
+}
+
+footer form {
+  margin-top: 35px;
+}
+
+footer input[type='text'] {
+  height: 30px;
+}
+
+footer input[type='text'],footer textarea {
+  display: block;
+  resize: none;
+  box-sizing: border-box;
+  margin: 10px auto;
+  padding: 0px 0px 2px 5px;
+  width: 300px;
+  height: 30px;
+  max-width: 300px;
+  font-size: 17px;
+  letter-spacing: 0.18px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #8ac0ff;
+  color: #243438;
+  transition: all 0.05s ease;
+}
+
+footer input[type='text']:hover,footer textarea:hover,footer input[type='text']:focus,footer textarea:focus {
+  padding-bottom: 0px;
+  border-bottom: 3px solid #8ac0ff;
+}
+
+footer textarea {
+  height: 140px;
 }
