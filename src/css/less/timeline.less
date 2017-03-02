@@ -2,24 +2,41 @@
 
     position: relative;
     width: 100%;
+    //overflow: hidden;
+    box-sizing: border-box;
 
     &:before {
 
         content: '';
         position: absolute;
         left: 50%;
-		top: 5px;
+		top: 4px;
         width: 2px;
 		height: 100%;
         margin-left: -1px;
         background: #d6d6d6;
-        
+        box-sizing: border-box;
     }
+
+    &:after {
+		content: "";
+		clear: both;
+		display: table;
+		width: 100%;
+        box-sizing: border-box;
+	}
 
     .entry {
 
-        //position: relative;
-        width: 100%;
+		position: relative;
+        margin-bottom: 10px;
+
+        &:after, &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            clear: both;
+        }
 
         & > .left,
         & > .right {
@@ -27,8 +44,12 @@
             display: inline-block;
             width: 50%;
             box-sizing: border-box;
-            //background: blue;
         }
+    }
+
+    .entry-finish {
+
+        margin-bottom: 30px;
     }
 
     .timeline-icon {
@@ -82,4 +103,26 @@
         font-weight: 300;
         letter-spacing: 0.16px;
     }
+
+    p {
+
+        font-size: 17px;
+        letter-spacing: 0.17px;
+    }
+
+    .sub-entry h4 {
+
+        font-size: 17px;
+        letter-spacing: 0.17px;
+    }
+}
+
+.present {
+
+    margin-top: 24px;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.16px;
+    text-align: center;
 }
