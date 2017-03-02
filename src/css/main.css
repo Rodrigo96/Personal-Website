@@ -908,3 +908,19 @@ footer input[type='text']:hover,footer textarea:hover,footer input[type='text']:
 footer textarea {
   height: 140px;
 }
+
+footer div {
+  width: 300px;
+  margin: 0px auto;
+}
+
+footer input[type='submit'] {
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: 0.18px;
+  color: #243438;
+  background: none;
+  border: 0px;
+  outline: none;
+}
