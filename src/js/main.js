@@ -46,6 +46,7 @@
       }, false);
 
       menuWraper.addEventListener('mouseleave', function () {
+        console.log('menu');
         isInMenu = false;
         setTimeout(function () {
           if (!isInMenu) closeMenu();

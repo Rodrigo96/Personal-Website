@@ -18,4 +18,4 @@ make scketch file downloadable
 
 add links to projects demos
 
-fix font-smothing bug in demos btn
+make favicon

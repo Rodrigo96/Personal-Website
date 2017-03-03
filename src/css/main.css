@@ -332,6 +332,7 @@ nav div {
 
 nav div .wraper {
   float: right;
+  margin: 0px;
   width: 34px;
   height: 100%;
   pointer-events: initial;
@@ -342,22 +343,18 @@ nav div .wraper button {
   height: 100%;
   padding: 0px;
   background-color: #002a34;
+  background-image: url('/imgs/menu-open.png');
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 30px;
   border: 0;
   outline: none;
   cursor: pointer;
+  transition: background-image 0.3s ease;
 }
 
-nav div .wraper button div {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  background: url('/imgs/menu-open.png') no-repeat center;
-  transition: background 0.3s ease;
-}
-
-nav div .wraper button .menu-btn-open {
-  background: url('/imgs/menu-close.png') no-repeat center;
+nav div .wraper .menu-btn-open {
+  background-image: url('/imgs/menu-close.png');
 }
 
 nav .menu {
