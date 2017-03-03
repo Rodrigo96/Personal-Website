@@ -4,13 +4,36 @@
   var page = {
     init: function () {
 
-      var menuWraper = document.getElementById('menu-wraper'),
+      var nameTopLeft = document.getElementById('name'),
+          headerNameBottom = document.getElementById('header-title') // distance from the bottom of the element to
+            .getBoundingClientRect().bottom + window.pageYOffset,    // the top of the viewport
+          throttleScrool = false,
+          menuWraper = document.getElementById('menu-wraper'),
           menuBtn = document.getElementById('menu-btn'),
           menu = menuWraper.querySelector('.menu'),
           demosBtn = document.getElementById('demos-menu-btn'),
           demosMenu = demosBtn.querySelector('#demos-menu'),
           isInMenu = false, // true if mouse is over .menu
           isAnimating = false; // true if menu is animating
+
+      fadeNameTopLeft();
+
+      window.addEventListener('scroll', function () {
+        if (!throttleScrool) {
+          throttleScrool = true;
+          setTimeout(function () {
+            fadeNameTopLeft();
+            throttleScrool = false;
+          }, 500);
+        }
+      }, false);
+
+      function fadeNameTopLeft() {
+        if (window.pageYOffset > headerNameBottom)
+          nameTopLeft.classList.add('fade-in');
+        else
+          nameTopLeft.classList.remove('fade-in');
+      }
 
       function openMenu() {
         isAnimating = true;
@@ -46,7 +69,6 @@
       }, false);
 
       menuWraper.addEventListener('mouseleave', function () {
-        console.log('menu');
         isInMenu = false;
         setTimeout(function () {
           if (!isInMenu) closeMenu();
@@ -79,6 +101,6 @@
 
   window.addEventListener('load', function load(event){
     window.removeEventListener('load', load, false);
-    page.init();  
+    page.init();
   },false);
 }());

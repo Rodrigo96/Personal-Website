@@ -1,21 +1,13 @@
-rodrigo alves text on top left corner to be faded in
-
-set links in menu
-
-stop menu from activating click event while moving
-
-add cv to cv menu button
-
-remember to add link to "view on github" in header main text.
-
 add a mediequery to givethe navbar a white background and a white drop shadow when the text goes under the name
-
-take care of links at the end of every section
-
-remember to animate the button in the menu to scrool to section
-
-make scketch file downloadable
 
 add links to projects demos
 
 make favicon
+
+add scketch file to download
+
+set up the demos
+
+add cv for download
+
+update readme files in repositories
