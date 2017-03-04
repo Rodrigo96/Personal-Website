@@ -1,7 +1,3 @@
-add a mediequery to givethe navbar a white background and a white drop shadow when the text goes under the name
-
-make favicon
-
 add scketch file to download
 
 set up the demos
