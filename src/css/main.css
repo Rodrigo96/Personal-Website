@@ -292,6 +292,7 @@ a {
   width: 700px;
   margin: auto;
   padding-top: 115px;
+  box-sizing: border-box;
 }
 
 .body-wraper a {
@@ -949,5 +950,12 @@ footer button:hover img:last-child {
     pointer-events: initial;
     background-color: #ffffff;
     box-shadow: 0px 2px 5px 0px #ffffff;
+  }
+}
+
+@media (max-width: 740px) {
+  .body-wraper {
+    width: 100%;
+    padding: 115px 20px 0px 20px;
   }
 }
