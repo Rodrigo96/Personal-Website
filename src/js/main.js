@@ -90,7 +90,7 @@
           openDemosMenu();
       }
 
-      demosBtn.addEventListener('click', toggleDemosMenu, false);
+      //demosBtn.addEventListener('click', toggleDemosMenu, false);
 
       demosBtn.addEventListener('mouseenter', openDemosMenu, false);
 
