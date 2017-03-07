@@ -479,7 +479,6 @@ section p {
 }
 
 .imgs-wraper {
-  height: 69px;
   margin: 50px auto 25px auto;
   text-align: center;
   color: #878d8f;
@@ -492,7 +491,7 @@ section p {
   display: inline-block;
   height: 100%;
   width: 79px;
-  margin: 0px 17px;
+  margin: 15px 17px;
 }
 
 .imgs-wraper .img-cell img {
@@ -957,5 +956,38 @@ footer button:hover img:last-child {
   .body-wraper {
     width: 100%;
     padding: 115px 20px 0px 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 18px;
+  }
+
+  .body-wraper {
+    padding-top: 75px;
+  }
+
+  header img {
+    margin: 0 auto 30px auto;
+    height: 150px;
+    width: 150px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  header h2 {
+    font-size: 22px;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  header .repo {
+    font-size: 18px;
+    text-align: center;
   }
 }
