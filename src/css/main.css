@@ -957,6 +957,41 @@ footer button:hover img:last-child {
     width: 100%;
     padding: 115px 20px 0px 20px;
   }
+
+  .project-container .project-cell img {
+    width: 100%;
+  }
+
+  .project-container .project-cell .center {
+    font-size: 16px;
+  }
+
+  .project-container .project-cell h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 650px) {
+  .project-container .project-cell {
+    display: block;
+  }
+
+  .project-container .project-cell img {
+    width: 100%;
+  }
+
+  .project-container .project-cell .center {
+    font-size: 16px;
+  }
+
+  .project-container .project-cell h4 {
+    font-size: 18px;
+  }
+
+  .right,.left {
+    float: none;
+    text-align: left;
+  }
 }
 
 @media (max-width: 400px) {
