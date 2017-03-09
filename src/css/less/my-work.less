@@ -226,31 +226,56 @@
 
     .project-container {
 
+        height: auto;
+        margin: 50px 0px;
+
+        .left,
+        .right {
+
+            float: none;
+            text-align: left;
+        }
+
         .project-cell {
 
             display: block;
-
-            img {
-
-                width: 100%;
-            }
-
-            .center {
-
-                font-size: 16px;
-            }
+            width: 100%;
+            margin: 20px 0px;
 
             h4 {
 
                 font-size: 18px;
             }
+
+            .center,
+            img {
+
+                position: initial;
+                display: block;
+                 width: initial;
+                margin: 0px auto;
+                transform: none;
+                font-size: 16px;
+                text-align: center;
+            }
+            
+            .list-wrap {
+
+                width: auto;
+            }
+
+            .dropdown-btn {
+
+                z-index: 100;
+            }
         }
     }
+}
 
-    .right,
-    .left {
+@media (max-width: 400px) {
 
-        float: none;
-        text-align: left;
+    .project-container .project-cell img {
+
+        width: 90%;
     }
 }
