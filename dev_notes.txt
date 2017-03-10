@@ -1,7 +1,1 @@
-add scketch file to download
-
-set up the demos
-
 add cv for download
-
-update readme files in repositories
