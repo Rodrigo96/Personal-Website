@@ -126,3 +126,46 @@
     letter-spacing: 0.16px;
     text-align: center;
 }
+
+@media (max-width: 510px) {
+
+    .timeline {
+
+        padding-left: 20px;
+
+        &:before {
+			left: 20px;
+		}
+
+        .timeline-icon {
+
+            left: 0px;
+        }
+
+        .small-icon {
+
+            left: 0px;
+        }
+
+        .entry {
+
+             & > .left,
+            & > .right {
+
+                display: inline-block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
+        .left {
+
+            float: none;
+        }
+
+        .right {
+
+            float: none;
+        }
+    }
+}
