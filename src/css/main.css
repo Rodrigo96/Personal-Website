@@ -770,7 +770,7 @@ section p {
   clear: both;
 }
 
-.timeline .entry > .left,.timeline .entry > .right {
+.timeline .entry > .left,.timeline .entry > .right,.timeline .entry > .offset-left,.timeline .entry > .offset-right {
   display: inline-block;
   width: 50%;
   box-sizing: border-box;
@@ -798,13 +798,13 @@ section p {
   width: 10px;
 }
 
-.timeline .left {
+.timeline .left,.timeline .offset-left {
   float: left;
   padding-right: 20px;
   text-align: right;
 }
 
-.timeline .right {
+.timeline .right,.timeline .offset-right {
   float: right;
   padding-left: 20px;
   text-align: left;
@@ -1007,7 +1007,7 @@ footer button:hover img:last-child {
   }
 
   .project-container .project-cell .dropdown-btn {
-    z-index: 100;
+    z-index: 1;
   }
 }
 
@@ -1028,18 +1028,31 @@ footer button:hover img:last-child {
     left: 0px;
   }
 
-  .timeline .entry > .left,.timeline .entry > .right {
+  .timeline .entry > .left,.timeline .entry > .right,.timeline .entry > .offset-left,.timeline .entry > .offset-right {
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
   }
 
-  .timeline .left {
+  .timeline .left,.timeline .right,.timeline .offset-left,.timeline .offset-right {
     float: none;
   }
 
-  .timeline .right {
-    float: none;
+  .timeline .offset-left {
+    padding-left: 20px;
+    padding-right: 0px;
+    text-align: left;
+  }
+
+  .timeline .offset-right {
+    padding-left: 0px;
+    padding-right: 20px;
+    text-align: right;
+  }
+
+  .present {
+    margin-left: -6px;
+    text-align: left;
   }
 }
 

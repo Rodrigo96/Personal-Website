@@ -39,7 +39,9 @@
         }
 
         & > .left,
-        & > .right {
+        & > .right,
+        & > .offset-left,
+        & > .offset-right {
 
             display: inline-block;
             width: 50%;
@@ -72,14 +74,16 @@
         width: 10px;
     }
 
-    .left {
+    .left,
+    .offset-left {
 
         float: left;
         padding-right: 20px;
         text-align: right;
     }
 
-    .right {
+    .right,
+    .offset-right {
 
         float: right;
         padding-left: 20px;
@@ -149,8 +153,10 @@
 
         .entry {
 
-             & > .left,
-            & > .right {
+            & > .left,
+            & > .right,
+            & > .offset-left,
+            & > .offset-right {
 
                 display: inline-block;
                 width: 100%;
@@ -158,14 +164,32 @@
             }
         }
 
-        .left {
+        .left,
+        .right,
+        .offset-left,
+        .offset-right {
 
             float: none;
         }
 
-        .right {
+        .offset-left {
 
-            float: none;
+            padding-left: 20px;
+            padding-right: 0px;
+            text-align: left;
         }
+
+        .offset-right {
+
+            padding-left: 0px;
+            padding-right: 20px;
+            text-align: right;
+        }
+    }
+
+    .present {
+
+        margin-left: -6px;
+        text-align: left;
     }
 }
