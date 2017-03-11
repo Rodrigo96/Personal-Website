@@ -1038,6 +1038,10 @@ footer button:hover img:last-child {
     float: none;
   }
 
+  .timeline .left {
+    padding: 0px;
+  }
+
   .timeline .offset-left {
     padding-left: 20px;
     padding-right: 0px;
@@ -1045,8 +1049,7 @@ footer button:hover img:last-child {
   }
 
   .timeline .offset-right {
-    padding-left: 0px;
-    padding-right: 20px;
+    padding: 0px;
     text-align: right;
   }
 
