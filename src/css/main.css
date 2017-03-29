@@ -355,6 +355,11 @@ nav div .wraper button {
   transition: background-image 0.3s ease;
 }
 
+nav div .wraper button:after {
+  content: '';
+  background-image: url('/imgs/menu-close.png');
+}
+
 nav div .wraper .menu-btn-open {
   background-image: url('/imgs/menu-close.png');
 }

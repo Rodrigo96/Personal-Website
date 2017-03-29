@@ -49,11 +49,18 @@ nav {
                 outline: none;
                 cursor: pointer;
                 transition: background-image 0.3s ease;
+
+                // force browser to load menu-close.png before it's used
+                &:after {
+
+                    content: '';
+                    background-image: url('/imgs/menu-close.png');    
+                }
             }
 
             .menu-btn-open {
 
-                    background-image: url('/imgs/menu-close.png');
+                background-image: url('/imgs/menu-close.png');
             }
         }
     }
